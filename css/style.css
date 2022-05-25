@@ -1,7 +1,8 @@
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
-  --accent-text-color: #2196f3;
+  --accent-color: #2196f3;
+  --accent-hover-color: #ffffff;
 }
 
 body {
@@ -23,8 +24,8 @@ body {
   background-color: #ffffff;
 }
 
-.header-logo {
-  font-family: "Raleway";
+.logo {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -33,7 +34,7 @@ body {
 }
 
 .accent {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 .header-link {
@@ -56,7 +57,7 @@ body {
 .header-link:focus,
 .contacts-link:hover,
 .contacts-link:focus {
-  color: var(--accent-text-color);
+  color: var(--accent-color);
 }
 
 /* ----------hero---------- */
@@ -74,9 +75,8 @@ body {
   color: #ffffff;
 }
 
-.hero-buton,
-.buton {
-  font-weight: 700;
+.hero-button {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
@@ -84,6 +84,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background: var(--accent-color);
 }
 
 /* ----------Особенносьти---------- */
@@ -142,18 +143,30 @@ body {
   color: #ffffff;
 }
 
-.address-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.contacts-link {
+.address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link {
+  color: #ffffff;
+}
+
+/* ----------портволио---------- */
+
+.list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.list-link:hover {
+  color: var(--accent-hover-color);
+  background-color: var(--accent-color);
 }
