@@ -58,6 +58,10 @@ body {
   color: var(--secondary-text-color);
 }
 
+.header-link.current {
+  color: var(--accent-color);
+}
+
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -98,6 +102,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: var(--accent-color);
+  cursor: pointer;
 }
 
 /* ----------Особенносьти---------- */
@@ -171,7 +176,7 @@ body {
 
 /* ----------портволио---------- */
 
-.list-link {
+.btn-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -180,10 +185,11 @@ body {
   color: var(--secondary-text-color);
 }
 
-.list-link:hover,
-.list-link:focus {
+.btn-link:hover,
+.btn-link:focus {
   color: var(--accent-hover-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 h2 {
